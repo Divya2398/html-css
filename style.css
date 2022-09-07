@@ -209,7 +209,7 @@ footer {
 
 /* flex */
 
-aside {
+/* aside {
   border-top: solid 10px rgb(16, 175, 238);
   border-bottom: solid 10px rgb(16, 175, 238);
   background-color: rgb(201, 201, 201);
@@ -225,7 +225,7 @@ article {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
-  /* gap: 80px; */
+  gap: 80px;
 }
 header {
   display: flex;
@@ -233,4 +233,36 @@ header {
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+} */
+
+/* ----------------------------------------------------------------------- */
+/* grid */
+
+aside {
+  border-top: solid 10px rgb(16, 175, 238);
+  border-bottom: solid 10px rgb(16, 175, 238);
+  background-color: rgb(201, 201, 201);
+  align-self: start;
+}
+
+footer {
+  background-color: rgb(24, 206, 206);
+  padding: 20px;
+  grid-column: 1 / span 2;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px 70px;
+  /* align-items: start; */
+}
+header {
+  background: rgb(197, 197, 197);
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  margin-right: 20px;
 }
